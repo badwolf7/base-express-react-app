@@ -1,0 +1,20 @@
+{
+  "name": "onprem-frontend-interview-homework",
+  "version": "0.1.0",
+  "description": "A basic CRUD service to be used for OnPrem FE Interview tests",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "http-status": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  }
+}
